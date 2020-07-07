@@ -1,12 +1,7 @@
 /* Tag Selectors */
 body {
   font-family: "Poppins", sans-serif;
-}
-
-h1 {
-  font-weight: 700;
-  line-height: 1.5;
-  font-size: 3.5rem;
+  text-align: center;
 }
 
 h2 {
@@ -22,7 +17,7 @@ h3 {
 }
 
 p {
-    color: #8f8f8f;
+  color: #8f8f8f;
 }
 
 /* ID selectors */
@@ -30,6 +25,7 @@ p {
 #title {
   background-color: #ff4c68;
   color: white;
+  text-align: left;
 }
 
 #features {
@@ -39,14 +35,12 @@ p {
 }
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: white;
 }
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -56,25 +50,40 @@ p {
 
 #cta {
   background-color: #ff4c68;
-  text-align: center;
 }
 
 #footer {
-    text-align: center;
-    padding: 7% 15% 3%;
-    background-color: white;
+  padding: 7% 15% 3%;
+  background-color: white;
 }
 
 /* Class selectors */
 
-.carousel-item {
-  padding: 7% 15%;
+/* heading */
+
+.heading-title {
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 3.5rem;
 }
 
 .container-fluid {
   height: 20%;
   padding: 3% 15% 7%;
 }
+
+.down-btn {
+  margin: 5% 3% 5% 0;
+}
+
+.dog-phone {
+  width: 60%;
+  transform: rotate(25deg);
+  margin: 5% 0 0 10%;
+  position: absolute;
+}
+
+/* Navigation */
 
 .navbar-brand {
   position: relative;
@@ -98,35 +107,24 @@ p {
   font-weight: 300;
 }
 
-.down-btn {
-  margin: 5% 3% 5% 0;
+/* Carousel */
+
+.carousel-item {
+  padding: 7% 15%;
 }
 
-.dog-phone {
-  width: 60%;
-  transform: rotate(25deg);
-  margin: 5% 0 0 10%;
-  position: absolute;
+.testimonial-image {
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
 }
 
-@media (max-width: 1028px) {
-  .dog-phone {
-    transform: rotate(0);
-    position: static;
-  }
-  .container-fluid {
-    text-align: center;
-  }
-}
-
-.feat {
-  text-align: center;
-}
+/* features */
 
 .feature-para {
   color: #8f8f8f;
   font-family: "Montserrat", sans-serif;
-  padding: 0 23%;
+  padding: 0 15%;
 }
 
 .feature-images {
@@ -139,19 +137,11 @@ p {
   color: #ff4c68;
 }
 
-.testimonial-image {
-  border-radius: 100%;
-  width: 10%;
-  margin: 20px;
-}
+/* Pricing */
 
 .press-img {
   width: 15%;
   margin: 20px 20px 50px;
-}
-
-.card {
-  text-align: center;
 }
 
 .pricing-col {
@@ -162,18 +152,32 @@ p {
   color: #8f8f8f;
 }
 
+/* CTA */
+
 .cta-container {
-    padding: 7% 15%;
+  padding: 7% 15%;
 }
 
 .cta-h3 {
-    font-size: 3.5rem;
-    line-height: 1.5;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
+/* footer */
+
 .footer-icon {
-    margin: 10px 20px;
+  margin: 10px 20px;
+}
+
+/* Media Quieries */
+
+@media (max-width: 1028px) {
+  .dog-phone {
+    transform: rotate(0);
+    position: static;
+  }
+  .container-fluid {
+    text-align: center;
+  }
 }
