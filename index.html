@@ -63,13 +63,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="">Contact</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Pricing</a>
+                <a class="nav-link" href="#cta">Download</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Download</a>
+                <a class="nav-link" href="#footer">Contact</a>
               </li>
             </ul>
           </div>
@@ -189,9 +189,11 @@
 
     <section id="pricing">
       <h2>A Plan for Every Dog's Needs</h2>
-      <p>Simple and affordable price plans for your and your dog.</p>
+      <p class="pricing-para">
+        Simple and affordable price plans for your and your dog.
+      </p>
       <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 pricing-col">
           <div class="card">
             <div class="card-header">
               <h3>Chihuahua</h3>
@@ -201,11 +203,16 @@
               <p>5 Matches Per Day</p>
               <p>10 Messages Per Day</p>
               <p>Unlimited App Usage</p>
-              <button type="button">Sign Up</button>
+              <button
+                type="button"
+                class="btn btn-outline-dark pricing-btn btn-lg btn-block"
+              >
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 pricing-col">
           <div class="card">
             <div class="card-header">
               <h3>Labrador</h3>
@@ -215,11 +222,16 @@
               <p>Unlimited Matches</p>
               <p>Unlimited Messages</p>
               <p>Unlimited App Usage</p>
-              <button type="button">Sign Up</button>
+              <button
+                type="button"
+                class="btn btn-dark pricing-btn btn-lg btn-block"
+              >
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12">
+        <div class="col-lg-4 col-md-12 pricing-col">
           <div class="card">
             <div class="card-header">
               <h3>Mastiff</h3>
@@ -230,7 +242,12 @@
               <p>Unlimited Matches</p>
               <p>Unlimited Messages</p>
               <p>Unlimited App Usage</p>
-              <button type="button">Sign Up</button>
+              <button
+                type="button"
+                class="btn btn-dark pricing-btn btn-lg btn-block"
+              >
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
@@ -240,15 +257,25 @@
     <!-- Call to Action -->
 
     <section id="cta">
-      <h3>Find the True Love of Your Dog's Life Today.</h3>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
+      <div class="container-fluid cta-container">
+        <h3 class="cta-h3">Find the True Love of Your Dog's Life Today.</h3>
+        <button type="button" class="btn btn-lg btn-dark down-btn">
+          <span class="fab fa-apple"></span> Download
+        </button>
+        <button type="button" class="btn btn-lg btn-light down-btn">
+          <span class="fab fa-google-play"></span> Download
+        </button>
+      </div>
     </section>
 
     <!-- Footer -->
 
     <footer id="footer">
-      <p>© Copyright 2018 TinDog</p>
+      <span class="fab fa-twitter footer-icon"></span>
+      <span class="fab fa-facebook-f footer-icon"></span>
+      <span class="fab fa-instagram footer-icon"></span>
+      <span class="fas fa-envelope footer-icon"></span>
+      <p >© Copyright 2020 TinDog</p>
     </footer>
   </body>
 </html>

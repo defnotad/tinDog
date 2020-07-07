@@ -21,11 +21,21 @@ h3 {
   color: black;
 }
 
+p {
+    color: #8f8f8f;
+}
+
 /* ID selectors */
 
 #title {
   background-color: #ff4c68;
   color: white;
+}
+
+#features {
+  padding: 7% 15%;
+  background-color: white;
+  position: relative;
 }
 
 #testimonials {
@@ -40,6 +50,21 @@ h3 {
   padding-bottom: 3%;
 }
 
+#pricing {
+  padding: 100px;
+}
+
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+}
+
+#footer {
+    text-align: center;
+    padding: 7% 15% 3%;
+    background-color: white;
+}
+
 /* Class selectors */
 
 .carousel-item {
@@ -47,7 +72,8 @@ h3 {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  height: 20%;
+  padding: 3% 15% 7%;
 }
 
 .navbar-brand {
@@ -79,11 +105,18 @@ h3 {
 .dog-phone {
   width: 60%;
   transform: rotate(25deg);
-  margin-top: 5%;
+  margin: 5% 0 0 10%;
+  position: absolute;
 }
 
-.feats {
-  margin: 7.5rem 0;
+@media (max-width: 1028px) {
+  .dog-phone {
+    transform: rotate(0);
+    position: static;
+  }
+  .container-fluid {
+    text-align: center;
+  }
 }
 
 .feat {
@@ -118,5 +151,29 @@ h3 {
 }
 
 .card {
+  text-align: center;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+.pricing-para {
+  color: #8f8f8f;
+}
+
+.cta-container {
+    padding: 7% 15%;
+}
+
+.cta-h3 {
+    font-size: 3.5rem;
+    line-height: 1.5;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.footer-icon {
+    margin: 10px 20px;
 }
